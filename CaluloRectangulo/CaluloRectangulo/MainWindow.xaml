@@ -7,35 +7,35 @@
         mc:Ignorable="d"
         Title="MainWindow" Height="450" Width="800" WindowStartupLocation="CenterScreen">
     <Grid>
-         <!--Definicion de las Filas-->
+        <!--Definicion de las Filas-->
         <Grid.RowDefinitions>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
-        
+
         <!--Definicion de las Columnas-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
-        
+
         <!-- Definicion del primer Border-->
 
-        <Border Grid.RowSpan="2" Grid.ColumnSpan="3" Background="RosyBrown">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="25" HorizontalAlignment="Center">
+        <Border Grid.RowSpan="4" Grid.ColumnSpan="3" Background="RosyBrown">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="31,32,574,132" HorizontalAlignment="Center" Height="255">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Margin="55 0 0 0" FontSize="18">X</TextBlock>
                     <TextBlock Margin="55 0 0 0" FontSize="18">Y</TextBlock>
-                    </StackPanel>
-                
+                </StackPanel>
+
                 <!-- campo de AX Y AY -->
                 <StackPanel Orientation="Horizontal" Margin="15">
                     <TextBlock FontSize="20">A</TextBlock>
                     <TextBox Name="txtAX" Height="20" Width="70"></TextBox>
-                    
+
                     <TextBlock FontSize="20">,</TextBlock>
                     <TextBox Name="txtAY" Height="20" Width="70"></TextBox>
 
@@ -50,12 +50,23 @@
 
                 </StackPanel>
 
+                <!-- Campo de CX Y CY-->
+                <StackPanel Orientation="Horizontal" Margin="15">
+                    <TextBlock FontSize="20">C</TextBlock>
+                    <TextBox Name="txtCX" Height="20" Width="70"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtCY" Height="20" Width="70"></TextBox>
+
+                </StackPanel>
+
+
 
 
             </StackPanel>
-            
+
         </Border>
-        
+
         <!---->
         
         
