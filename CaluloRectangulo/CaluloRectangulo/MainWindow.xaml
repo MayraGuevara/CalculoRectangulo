@@ -25,16 +25,28 @@
         <!-- Definicion del primer Border-->
 
         <Border Grid.RowSpan="2" Grid.ColumnSpan="3" Background="RosyBrown">
-            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="40" HorizontalAlignment="Center">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="25" HorizontalAlignment="Center">
                 <StackPanel Orientation="Horizontal">
-                    <TextBlock Margin="150 0 0 0">X</TextBlock>
-                    <TextBlock Margin="150 0 0 0">Y</TextBlock>
+                    <TextBlock Margin="55 0 0 0" FontSize="18">X</TextBlock>
+                    <TextBlock Margin="55 0 0 0" FontSize="18">Y</TextBlock>
+                    </StackPanel>
+                
+                <!-- campo de AX Y AY -->
+                <StackPanel Orientation="Horizontal" Margin="15">
+                    <TextBlock FontSize="20">A</TextBlock>
+                    <TextBox Name="txtAX" Height="20" Width="70"></TextBox>
+                    
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtAY" Height="20" Width="70"></TextBox>
                     
                 </StackPanel>
                 
-            </StackPanel>
+             </StackPanel>
             
         </Border>
+        
+        <!---->
+        
         
         
         
