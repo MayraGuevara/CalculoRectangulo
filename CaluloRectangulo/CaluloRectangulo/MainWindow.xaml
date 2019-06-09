@@ -14,6 +14,12 @@
             <RowDefinition Height="*"/>
 
         </Grid.RowDefinitions>
+        <!--Definicion de las Columnas-->
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
         
     </Grid>
 </Window>
