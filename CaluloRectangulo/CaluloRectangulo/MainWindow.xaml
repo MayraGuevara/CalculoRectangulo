@@ -38,10 +38,21 @@
                     
                     <TextBlock FontSize="20">,</TextBlock>
                     <TextBox Name="txtAY" Height="20" Width="70"></TextBox>
-                    
+
                 </StackPanel>
-                
-             </StackPanel>
+                <!-- Campo de BX Y BY-->
+                <StackPanel Orientation="Horizontal" Margin="15">
+                    <TextBlock FontSize="20">B</TextBlock>
+                    <TextBox Name="txtBX" Height="20" Width="70"></TextBox>
+
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtBY" Height="20" Width="70"></TextBox>
+
+                </StackPanel>
+
+
+
+            </StackPanel>
             
         </Border>
         
