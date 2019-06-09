@@ -12,14 +12,33 @@
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
             <RowDefinition Height="*"/>
-
+            <RowDefinition Height="*"/>
         </Grid.RowDefinitions>
+        
         <!--Definicion de las Columnas-->
         <Grid.ColumnDefinitions>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
             <ColumnDefinition Width="*"/>
         </Grid.ColumnDefinitions>
+        
+        <!-- Definicion del primer Border-->
+
+        <Border Grid.RowSpan="2" Grid.ColumnSpan="3" Background="RosyBrown">
+            <StackPanel Orientation="Horizontal" VerticalAlignment="Top" Margin="40" HorizontalAlignment="Center">
+                <StackPanel Orientation="Horizontal">
+                    <TextBlock Margin="150 0 0 0">X</TextBlock>
+                    <TextBlock Margin="150 0 0 0">Y</TextBlock>
+                    
+                </StackPanel>
+                
+            </StackPanel>
+            
+        </Border>
+        
+        
+        
+
         
     </Grid>
 </Window>
