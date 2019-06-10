@@ -232,6 +232,48 @@ namespace CaluloRectangulo
             }
         }
 
+        public string Altura
+        {
+            get
+            {
+
+                if (distancia() != false)
+                {
+                    Double da, da2;
+
+                    da = Math.Pow((int.Parse(DX) - int.Parse(AX)), 2) + Math.Pow((int.Parse(DY) - int.Parse(AY)), 2);
+                    da2 = Math.Pow(Math.Sqrt(da), 2);
+
+
+                    altura = da2.ToString();
+
+
+
+                }
+                return altura.ToString();
+            }
+            set
+            {
+
+
+                if (distancia() != false)
+                {
+                    Double da, da2;
+
+
+                    da = Math.Pow((int.Parse(DX) - int.Parse(AX)), 2) + Math.Pow((int.Parse(DY) - int.Parse(AY)), 2);
+                    da2 = Math.Pow(Math.Sqrt(da), 2);
+
+                    altura = da2.ToString();
+                    OnPropertyChanged("Altura");
+
+
+                }
+
+
+
+            }
+        }
 
 
         public event PropertyChangedEventHandler PropertyChanged;
