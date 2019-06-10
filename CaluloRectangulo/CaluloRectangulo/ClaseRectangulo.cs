@@ -92,6 +92,23 @@ namespace CaluloRectangulo
 
 
         }
+        public string AY
+        {
+            get { return ay; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) ay = value;
+                OnPropertyChanged("AY");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+
+            }
+
+
+        }
+
 
 
 
