@@ -25,7 +25,7 @@
         <!-- Definicion del primer Border-->
 
         <Border Grid.RowSpan="4" Grid.ColumnSpan="3" Background="RosyBrown">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="88,77,517,87" HorizontalAlignment="Center" Height="255">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="75,125,517,42" HorizontalAlignment="Center" Height="252" Width="200">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Margin="55 0 0 0" FontSize="18">X</TextBlock>
                     <TextBlock Margin="55 0 0 0" FontSize="18">Y</TextBlock>
@@ -97,13 +97,10 @@
                     <TextBlock FontSize="30">Area</TextBlock>
                     <TextBox x:Name="txtArea" Height="35" Width="150"/>
                 </StackPanel>
-
-
             </StackPanel>
-
         </Border>
 
-        <!---->
+ 
         
         
         
