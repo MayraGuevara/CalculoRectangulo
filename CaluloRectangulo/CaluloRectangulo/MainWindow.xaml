@@ -80,22 +80,22 @@
                 <TextBlock FontSize="30">Resultados:</TextBlock>
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="30">Altura</TextBlock>
-                    <TextBox x:Name="txtAltura" Height="35" Width="150"/>
+                    <TextBox x:Name="txtAltura" Height="35" Width="150" Text="{Binding Path=Altura,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
 
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="30">Base</TextBlock>
-                    <TextBox x:Name="txtBase" Height="35" Width="150"/>
+                    <TextBox x:Name="txtBase" Height="35" Width="150" Text="{Binding Path=Base,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
 
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="30">Perimetro</TextBlock>
-                    <TextBox x:Name="txtPerimetro" Height="35" Width="150"/>
+                    <TextBox x:Name="txtPerimetro" Height="35" Width="150" Text="{Binding Path=Perimetro,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
 
                 <StackPanel VerticalAlignment="Center">
                     <TextBlock FontSize="30">Area</TextBlock>
-                    <TextBox x:Name="txtArea" Height="35" Width="150"/>
+                    <TextBox x:Name="txtArea" Height="35" Width="150" Text="{Binding Path=Area,Mode=TwoWay,UpdateSourceTrigger=PropertyChanged}"/>
                 </StackPanel>
             </StackPanel>
         </Border>
