@@ -28,11 +28,21 @@ namespace CaluloRectangulo
         private bool validar;
         private string resultado;
 
-        public string AX;
+        public string AX
         {
-
+            get { return ax; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) ax = value;
+                OnPropertyChanged("AX");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+            }
         }
 
+        
     }
 
 
