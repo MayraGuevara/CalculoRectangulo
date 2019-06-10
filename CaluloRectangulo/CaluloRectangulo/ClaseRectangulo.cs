@@ -196,12 +196,12 @@ namespace CaluloRectangulo
             get
             {
 
-                if (distancia() = false)
+                if (distancia() != false)
                 {
                     double ab, ab2;
                     ab = Math.Pow((int.Parse(AX) - int.Parse(BX)), 2) + Math.Pow((int.Parse(AY) - int.Parse(BY)), 2);
 
-                    ab2 = Math.Sqrt(ab)
+                    ab2 = Math.Sqrt(ab);
 
                     baseR = ab2.ToString();
 
