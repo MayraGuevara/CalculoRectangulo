@@ -27,8 +27,11 @@ namespace CaluloRectangulo
         private string area;
         private bool validar;
         private string resultado;
-       
 
+        public string AX;
+        {
+
+        }
 
     }
 
