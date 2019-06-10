@@ -275,6 +275,29 @@ namespace CaluloRectangulo
             }
         }
 
+        public string Perimetro
+        {
+            get
+            {
+
+                if (distancia() != false)
+                {
+                    double p;
+                    p = int.Parse(Base) * 2 + int.Parse(Altura) * 2;
+                    perimetro = p.ToString();
+                }
+
+
+                return perimetro;
+            }
+            set
+            {
+                double p;
+                p = int.Parse(Base) + int.Parse(Altura);
+                OnPropertyChanged("Perimetro");
+            }
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string property)
