@@ -25,7 +25,7 @@
         <!-- Definicion del primer Border-->
 
         <Border Grid.RowSpan="4" Grid.ColumnSpan="3" Background="RosyBrown">
-            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="31,32,574,132" HorizontalAlignment="Center" Height="255">
+            <StackPanel Orientation="Vertical" VerticalAlignment="Center" Margin="31,69,574,95" HorizontalAlignment="Center" Height="255">
                 <StackPanel Orientation="Horizontal">
                     <TextBlock Margin="55 0 0 0" FontSize="18">X</TextBlock>
                     <TextBlock Margin="55 0 0 0" FontSize="18">Y</TextBlock>
@@ -60,11 +60,31 @@
 
                 </StackPanel>
 
+                <!-- Campo de DX Y DY-->
+                <StackPanel Orientation="Horizontal" Margin="15">
+                    <TextBlock FontSize="20">D</TextBlock>
+                    <TextBox Name="txtDX" Height="20" Width="70"></TextBox>
 
+                    <TextBlock FontSize="20">,</TextBlock>
+                    <TextBox Name="txtDY" Height="20" Width="70"></TextBox>
 
+                </StackPanel>
 
             </StackPanel>
 
+        </Border>
+        <!--Creacion del segundo Border-->
+
+        <Border Grid.RowSpan="1" Grid.ColumnSpan="3" Background="RosyBrown">
+        <StackPanel Orientation="Vertical" VerticalAlignment="Center" HorizontalAlignment="Center" Margin="347,73,295,-83">
+                <TextBlock FontSize="30">Resultados:</TextBlock>
+                <StackPanel VerticalAlignment="Center">
+                    <TextBlock FontSize="30">Altura:</TextBlock>
+                    <TextBox Name="txtAltura" Height="35" Width="150"/>
+                </StackPanel>
+
+            </StackPanel>
+            
         </Border>
 
         <!---->
