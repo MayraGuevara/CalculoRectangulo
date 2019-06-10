@@ -191,6 +191,47 @@ namespace CaluloRectangulo
             return validar;
         }
 
+        public string Base
+        {
+            get
+            {
+
+                if (distancia() = false)
+                {
+                    double ab, ab2;
+                    ab = Math.Pow((int.Parse(AX) - int.Parse(BX)), 2) + Math.Pow((int.Parse(AY) - int.Parse(BY)), 2);
+
+                    ab2 = Math.Sqrt(ab)
+
+                    baseR = ab2.ToString();
+
+
+
+                }
+                return baseR.ToString();
+            }
+            set
+            {
+
+
+                if (distancia() != false)
+                {
+                    Double ab, ab2;
+
+                    ab = Math.Pow((int.Parse(AX) - int.Parse(BX)), 2) + Math.Pow((int.Parse(AY) - int.Parse(BY)), 2);
+                    ab2 = Math.Sqrt(ab);
+
+                    baseR = ab2.ToString();
+                    OnPropertyChanged("Base");
+
+
+                }
+
+
+
+            }
+        }
+
 
 
         public event PropertyChangedEventHandler PropertyChanged;
