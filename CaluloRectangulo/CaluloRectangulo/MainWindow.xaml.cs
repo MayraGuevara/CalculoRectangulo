@@ -20,9 +20,12 @@ namespace CaluloRectangulo
     /// </summary>
     public partial class MainWindow : Window
     {
+        public ClaseRectangulo rectangulo { get; set; }
         public MainWindow()
         {
             InitializeComponent();
+            rectangulo = new ClaseRectangulo { AX = "-2", AY = "0", BX = "6", BY = "0", CX = "6", CY = "2", DX = "-2", DY = "2" };
+            this.DataContext = rectangulo;
         }
     }
 }

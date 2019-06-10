@@ -298,6 +298,29 @@ namespace CaluloRectangulo
             }
         }
 
+        public string Area
+        {
+            get
+            {
+
+                if (distancia() != false)
+                {
+                    double A;
+                    A = int.Parse(Base) + int.Parse(Altura);
+                    area = A.ToString();
+                }
+
+
+                return area;
+            }
+            set
+            {
+                double A;
+                A = int.Parse(Base) + int.Parse(Altura);
+                OnPropertyChanged("Area");
+            }
+        }
+
 
         public event PropertyChangedEventHandler PropertyChanged;
         private void OnPropertyChanged(string property)
