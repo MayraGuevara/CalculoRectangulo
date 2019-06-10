@@ -108,15 +108,64 @@ namespace CaluloRectangulo
 
 
         }
+        public string BY
+        {
+            get { return by; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) by = value;
+                OnPropertyChanged("BY");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+
+            }
 
 
+        }
+
+        public string CY
+        {
+            get { return cy; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) cy = value;
+                OnPropertyChanged("CY");
+                OnPropertyChanged("Altura");
+                OnPropertyChanged("Base");
+
+            }
 
 
-    }
+        }
+
+        public string DY
+        {
+            get { return dy; }
+            set
+            {
+                int numero;
+                bool resultado = int.TryParse(value, out numero);
+                if (resultado) dy = value;
+                    OnPropertyChanged("DY");
+                    OnPropertyChanged("Altura");
+                    OnPropertyChanged("Base");
+            }
 
 
+        }
 
-    {
         public event PropertyChangedEventHandler PropertyChanged;
+        private void OnPropertyChanged(string property)
+        {
+            if (PropertyChanged != null)
+                PropertyChanged(this, new PropertyChangedEventArgs(property));
+        }
     }
+
+
+}
 }
